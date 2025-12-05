@@ -60,6 +60,32 @@ This will execute the full ETL pipeline.
 
 ---------------------
 
+## 🧪 Run Unit Tests
+
+This project includes unit tests to validate the behavior of the ETL components (API availability, extract logic, etc.).
+
+To execute all tests locally using Astro, run:
+astro dev pytest
+
+
+This command will:
+- spin up a dedicated test container,
+- install test dependencies,
+- run all tests under the `tests/` directory,
+- display the results in your terminal.
+
+Example output:
+============================= test session starts ==============================
+collected 3 items
+
+tests/unit/test_is_api_available.py ... [100%]
+
+========================= 3 passed in 2.64s ====================================
+✔ All tests passed!
+
+
+---------------------
+
 ✨ Developer Signature
 
 Project developed by Karim GARGOURI.
